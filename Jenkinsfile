@@ -11,6 +11,19 @@ pipeline {
         echo "${TEST_USER_PSW}"
       }
     }
+    stage('Deploy') {
+      input {
+        message 'Should we continue?'
+      }
+      steps {
+        echo 'Continuing with deployment'
+      }
+    }
+    stage('Checkpoint') {
+      steps {
+        checkpoint 'Checkpoint'
+      }
+    }
   }
   environment {
     MY_NAME = 'Mary'
