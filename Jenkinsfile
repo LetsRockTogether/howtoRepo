@@ -19,6 +19,6 @@ pipeline {
     MY_NAME = 'Anshu'
   }
   parameters {
-    string(name: 'AnshuNehra', defaultValue: 'I know who I am', description: 'Who should I say hi to?')
+    string(name: 'Name', defaultValue: 'I know who I am', description: 'Who should I say hi to?')
   }
 }
